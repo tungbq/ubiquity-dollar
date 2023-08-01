@@ -1,0 +1,41 @@
+name: Auto Generate Doc
+
+on:
+  push:
+    branches:
+      - development
+      - auto-gen-doc # TODO: Remove after testing
+
+jobs:
+  generate-doc:
+    name: Generate Doc
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.14.1"
+
+      - name: Install dependencies
+        run: sudo apt -y update && sudo apt -y install libusb-1.0-0-dev libudev-dev
+
+      - name: Setup Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly-cc5637a979050c39b3d06bc4cc6134f0591ee8d0
+
+      - name: Yarn Install
+        run: yarn install --mode=skip-build && yarn allow-scripts
+        
+      - name: Setup Forge
+        run: yarn workspace @ubiquity/contracts forge:install
+
+      - name: Build All
+        run: yarn workspace @ubiquity/contracts docs
+
