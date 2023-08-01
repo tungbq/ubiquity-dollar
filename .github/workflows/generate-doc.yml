@@ -49,4 +49,4 @@ jobs:
           echo "git diff"
           git diff
           git add .
-          git commit -m "docs: Auto generate NATSPEC docs"
+          git commit -m "docs: auto generate NATSPEC docs"
