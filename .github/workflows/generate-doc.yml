@@ -36,6 +36,7 @@ jobs:
       - name: Setup Forge
         run: yarn workspace @ubiquity/contracts forge:install
 
-      - name: Build All
+      - name: Generate Docs
         run: yarn workspace @ubiquity/contracts docs
-
+      - name: Check changes
+        run: git status; git diff
