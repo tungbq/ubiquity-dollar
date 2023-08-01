@@ -1,5 +1,5 @@
 # IUbiquityDollarManager
-[Git Source](https://github.com/ubiquity/ubiquity-dollar/blob/ccc689b8b816039996240d21714a491a27963d57/packages/contracts/src/dollar/interfaces/IUbiquityDollarManager.sol)
+[Git Source](https://github.com/tungbq/ubiquity-dollar/blob/021a1767655c717ff939fd1e4c995d537ff29f07/src/dollar/interfaces/IUbiquityDollarManager.sol)
 
 **Inherits:**
 [IAccessControl](/src/dollar/interfaces/IAccessControl.sol/interface.IAccessControl.md)

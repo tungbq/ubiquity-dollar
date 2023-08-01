@@ -1,5 +1,5 @@
 # BondingCurveFacet
-[Git Source](https://github.com/ubiquity/ubiquity-dollar/blob/ccc689b8b816039996240d21714a491a27963d57/packages/contracts/src/dollar/facets/BondingCurveFacet.sol)
+[Git Source](https://github.com/tungbq/ubiquity-dollar/blob/021a1767655c717ff939fd1e4c995d537ff29f07/src/dollar/facets/BondingCurveFacet.sol)
 
 **Inherits:**
 [Modifiers](/src/dollar/libraries/LibAppStorage.sol/contract.Modifiers.md), [IBondingCurve](/src/dollar/interfaces/IBondingCurve.sol/interface.IBondingCurve.md)
