@@ -47,4 +47,6 @@ jobs:
           git branch -avv
           git log --graph --pretty=oneline --abbrev-commit --all -20
           echo "git diff"
-          git diff development
+          git diff
+          git add .
+          git commit -m "docs: Auto generate NATSPEC docs"
