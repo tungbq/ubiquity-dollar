@@ -50,3 +50,4 @@ jobs:
           git diff
           git add .
           git commit -m "docs: auto generate NATSPEC docs"
+          git push origin auto-gen-doc
